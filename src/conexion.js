@@ -7,13 +7,8 @@ const mysqlConexion = mysql.createConnection({
     database: 'birvxmqrxnbzpdvm0ogz'
 })
 
-mysqlConexion.connect(function (err){
-    if (err){
-        console.log(err);
-        return;
-    }else{
-        console.log('La BD esta conectada');
-    }
+mysqlConexion.connect(function (){
+    console.log('La BD esta conectada');
 });
 
 module.exports = mysqlConexion;
