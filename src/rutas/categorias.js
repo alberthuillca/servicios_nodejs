@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const mysqlConexion = require('../conexion');
+const mysqlConexion = require('../index');
 
 router.get('/', (req, res) => {
     mysqlConexion.query('SELECT * FROM categoria', (err,rows,fields) => {
