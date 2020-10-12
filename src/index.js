@@ -36,7 +36,9 @@ app.use(require('./rutas/categorias'));
 
 
 // Start Servidor
-app.listen(app.get('port'), () => {
-    console.log('Server funcionando', app.get('port'));
-})
+
+var server = app.listen(process.env.PORT || 4000, function () {
+    var port = server.address().port;
+    console.log("Express is working on port " + port);
+  });
 
