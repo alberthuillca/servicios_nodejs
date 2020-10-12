@@ -30,14 +30,14 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.json());
 
 // rutas
-app.use(require('./rutas/categorias'));
+app.use(require('./categorias'));
 
 
 
 
 // Start Servidor
 
-var server = app.listen(process.env.PORT || 4000, function () {
+var server = app.listen(process.env.PORT || 3000, function () {
     var port = server.address().port;
     console.log("Express is working on port " + port);
   });
