@@ -3,10 +3,10 @@ const mysql = require('mysql');
 
 
 const mysqlConexion = mysql.createConnection({
-    host: 'birvxmqrxnbzpdvm0ogz-mysql.services.clever-cloud.com',
-    user: 'uysv9t18xsovpgmn',
-    password: 'lqXoWZythDxqtkIJbcOp',
-    database: 'birvxmqrxnbzpdvm0ogz'
+    host: 'b9sgi85w0gawksbslnpj-mysql.services.clever-cloud.com',
+    user: 'ufep0oftmeis56cu',
+    password: 's69IYyUcpxfoPoWVBG4L',
+    database: 'b9sgi85w0gawksbslnpj'
 })
 
 mysqlConexion.connect(function (err){
@@ -21,6 +21,7 @@ mysqlConexion.connect(function (err){
 module.exports = mysqlConexion;
 
 const app = express();  
+
 
 // setings
 app.set('port', process.env.PORT || 3000);
